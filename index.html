@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dash Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="cms.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button
+            type="button"
+            class="sidebar-burger"
+            onclick="toggleSidebar()"
+          ></button>
+          <img src="./assets/blocklord-logo.png" class="sidebar-logo" />
+        </header>
+        <nav class="sidebar-nav">
+          <button type="button">
+            <img src="./assets/icon-home.svg" />
+            <span>Home</span>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-settings.svg" />
+            <span style="animation-delay: 0.1s">Settings</span>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-levels.svg" />
+            <span style="animation-delay: 0.2s">Levels</span>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-accounts.svg" />
+            <span style="animation-delay: 0.3s">Accounts</span>
+          </button>
+        </nav>
+        <footer class="sidebar-footer">
+          <button type="button">
+            <img src="./assets/icon-lock.svg" />
+            <span>Logout</span>
+          </button>
+        </footer>
+      </div>
+    </aside>
+    <div class="container">
+      <div class="input-form">
+        <h1>Price<span class="us">List</span></h1>
+        <p>Behind Closed Doors </p>
+        <form action="">
+            <input id="cutting" placeholder="Hair Cutting" > 
+                <button class="update-btn" onclick="updatePrices('cutting')">Update</button>
+            <input id="shaving" placeholder=" Shaving And Facial" ><button class="update-btn" onclick="updatePrices('shaving')">Update</button>
+            <input id="wash" placeholder=" Hair Color/Wash" ><button class="update-btn" onclick="updatePrices('Washing')">Update</button>
+            <input id="bodymassage" placeholder=" Body Massage" ><button class="update-btn" onclick="updatePrices('bodymassage')">Update</button>
+            <input id="spa" placeholder="    Beauty And Spa" ><button class="update-btn" onclick="updatePrices('spa')">Update</button>
+            <input id="facial" placeholder=" Facial And Face Wash" ><button class="update-btn" onclick="updatePrices('facial')">Update</button>
+            <input id="backbone" placeholder=" Backbone Massages" ><button class="update-btn" onclick="updatePrices('backbone')">Update</button>
+            <input id="meditation" placeholder=" Meditation Massage" ><button class="update-btn" onclick="updatePrices('meditation')">Update</button>
+            
+            
+
+            <!-- </textarea>
+            <input id="Submit" name="" value="Submit" class="btn"> -->
+        </form>
+       
+    
+        <h1>Gallery<span class="us">Changes</span></h1>
+        <p>Image URLS</p>
+        <form action="">
+            <input id="" placeholder="Image 1" ><button class="update-btn">Update</button>
+            <input id="email" name="email" id=""  placeholder="Image 2" ><button class="update-btn">Update</button>
+            <input id="" placeholder=" Image 3" ><button class="update-btn">Update</button>
+            <input id="" placeholder=" Image 4" ><button class="update-btn">Update</button>
+            <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required> -->
+
+            
+            <!-- <input type="Submit" name="" value="Submit" class="btn"> -->
+        </form>
+       
+    </div>
+    </div>
+
+
+    <script src="cms.js"></script>
+    <script type="text/javascript">
+      const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>

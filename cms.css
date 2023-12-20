@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color:#131313;
+}
+.container{
+    margin-left: 80px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#9770409a;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color:#ffffffc4 ;
+}
+
+.input-form form input,
+form textarea{
+    width: 100;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    border-radius: 10px;
+}
+.update-btn{
+    padding: 9px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #191919;
+    border-radius: 10px;
+    color: #fff;
+}
