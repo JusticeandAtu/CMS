@@ -10,7 +10,7 @@ async function updatePrices(service) {
   // Fill in your GitHub information
   const username = 'JusticeandAtu'; // Updated GitHub username
   const repoName = 'reserve-page'; // Updated GitHub repository name
-  const filePath = 'assets/js/pricelist.js'; // Updated file path within the repository
+  const filePath = 'assets/js/pricelist.json'; // Updated file path within the repository
 
   // Construct the GitHub API URL
   const apiUrl = `https://api.github.com/repos/${username}/${repoName}/contents/${filePath}`;
