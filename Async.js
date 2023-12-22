@@ -2,7 +2,7 @@ async function updatePrices(service) {
   const newPrice = document.getElementById(service).value;
   
   // Ensure the token is properly assigned
-  const token = 'YOUR_GITHUB_TOKEN'; // Replace with your GitHub token
+  const token = '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'; // Replace with your GitHub token
 
   // Confirm the change (optional)
   confirm('We\'re changing service');
