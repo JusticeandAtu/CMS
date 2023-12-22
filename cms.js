@@ -47,5 +47,5 @@ async function updatePrices(service) {
   });
 
   const updatedDataFromGitHub = await updateResponse.json();
-  alert(`${service} price updated successfully:`, updatedDataFromGitHub);
+  console.log(`${service} price updated successfully:`, updatedDataFromGitHub);
 } 
