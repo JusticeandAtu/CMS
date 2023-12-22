@@ -1,6 +1,7 @@
 async function updatePrices(service) {
   const newPrice = document.getElementById(service).value;
   // newtoken: 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
+  confirm ( we're changing service ');
 
   // Fill in your GitHub information
   const username = 'JusticeandAtu'; // Updated GitHub username
@@ -22,10 +23,12 @@ async function updatePrices(service) {
   const currentContent = atob(data.content);
 
   // Update the price for the specified service
-  const updatedContent = currentContent.replace(
-    new RegExp(`(\\b${service}['"]?\\s*:\\s*)\\d+`),
-    `$1${newPrice}`
-  );
+  // Update the price for the specified service
+const updatedContent = currentContent.replace(
+  new RegExp(`(\\bserviceName\\s*:\\s*'${service}'\\s*,\\s*price\\s*:\\s*)\\d+`),
+  `$1${newPrice}`
+);
+
 
   // Encode the updated content
   const encodedContent = btoa(updatedContent);
