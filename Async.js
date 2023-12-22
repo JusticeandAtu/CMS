@@ -5,7 +5,7 @@ async function updatePrices(service) {
   const token = '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'; // Replace with your GitHub token
 
   // Confirm the change (optional)
-  confirm('We\'re changing service');
+ // confirm('We\'re changing service');
 
   // Fill in your GitHub information
   const username = 'JusticeandAtu'; // Updated GitHub username
