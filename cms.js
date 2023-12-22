@@ -4,7 +4,7 @@ async function updatePrices(service) {
   // Fill in your GitHub information
   const username = 'JusticeandAtu'; // Updated GitHub username
   const repoName = 'reserve-page'; // Updated GitHub repository name
-  const filePath = 'assets/js/prices.js'; // Updated file path within the repository
+  const filePath = 'assets/js/pricelist.js'; // Updated file path within the repository
   const token = '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'; // Replace with your GitHub token
 
   // Construct the GitHub API URL
